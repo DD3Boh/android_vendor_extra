@@ -17,4 +17,7 @@ LINEAGE_VERSION=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -
 # Themes
 DEVICE_PACKAGE_OVERLAYS += vendor/extra/overlay
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/extra/overlay
+PRODUCT_PROPERTY_OVERRIDES += persist.sys.overlay.photness=true
+PRODUCT_PACKAGES += \
+    P-Hotness
 endif
