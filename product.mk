@@ -1,4 +1,8 @@
 ifeq ($(TARGET_PRIVATE_BUILD),true)
+
+# Lineage custom version
+LINEAGE_VERSION=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-PRIVATE$(LINEAGE_EXTRAVERSION)-$(LINEAGE_BUILD)
+
 # Themes
 DEVICE_PACKAGE_OVERLAYS += vendor/extra/overlay
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/extra/overlay
