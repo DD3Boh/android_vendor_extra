@@ -1,3 +1,4 @@
+ifeq ($(TARGET_PRIVATE_BUILD),true)
 # Themes
 DEVICE_PACKAGE_OVERLAYS += vendor/extra/overlay
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/extra/overlay
@@ -12,3 +13,4 @@ PRODUCT_COPY_FILES += \
     vendor/extra/fonts/GoogleSans-Italic.ttf:system/fonts/GoogleSans-Italic.ttf \
     vendor/extra/fonts/GoogleSans-Bold.ttf:system/fonts/GoogleSans-Bold.ttf \
     vendor/extra/fonts/GoogleSans-BoldItalic.ttf:system/fonts/GoogleSans-BoldItalic.ttf
+endif
